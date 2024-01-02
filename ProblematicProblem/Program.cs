@@ -35,14 +35,12 @@ namespace ProblematicProblem
                     Console.WriteLine();
                     exit = false;
                 }
-                catch (Exception e)
+                catch (FormatException e)
                 {
                     Console.WriteLine("Plese enter a correct age.");
                 }
             } while (exit);
-            //Console.Write("What is your age? ");
-            //int userAge = int.Parse(Console.ReadLine());
-            //Console.WriteLine();
+
             Console.Write("Would you like to see the current list of activities? Sure/No thanks: ");
             var seeList = Console.ReadLine().ToLower();
             if (seeList == "sure")
